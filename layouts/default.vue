@@ -79,6 +79,7 @@
 </template>
 
 <script>
+import { onMounted } from 'vue';
 import ButtonComponent from '../components/ButtonComponent.vue'
 export default {
   components: { ButtonComponent },
@@ -113,7 +114,6 @@ export default {
         navItem10.className = "navItemProp"
 
       } else {
-        console.log("second")
         x.className = "d-flex justify-space-between topnav";
         navItem1.className = "navItemSmallProp"
         navItem2.className = "navItemSmallProp"
@@ -127,6 +127,19 @@ export default {
         navItem10.className = "navItemSmallProp"
       }
     }
+
+    onMounted(() => {
+      navItem1.className = "navItemSmallProp"
+      navItem2.className = "navItemSmallProp"
+      navItem3.className = "navItemSmallProp"
+      navItem4.className = "navItemSmallProp"
+      navItem5.className = "navItemSmallProp"
+      navItem6.className = "navItemSmallProp"
+      navItem7.className = "navItemSmallProp"
+      navItem8.className = "navItemSmallProp"
+      navItem9.className = "navItemSmallProp"
+      navItem10.className = "navItemSmallProp"
+    });
 
     return {myFunction}
   }

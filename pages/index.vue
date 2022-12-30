@@ -125,8 +125,10 @@
         <img width="80px" height="80px" src="@/assets/tv.png">
       </v-row>
 
-      <v-row>
-        <span class="mx-auto" style="text-align: center;" id="appleFontNormalTitle">Watch Apple TV+ anywhere on the Apple TV app.</span>
+      <v-row justify="center" align="center">
+        <v-col cols="10" md="8" lg="6" style="text-align: center;">
+          <span id="appleFontNormalTitle">Watch Apple TV+ anywhere on the Apple TV app.</span>
+        </v-col>
       </v-row>
 
 
