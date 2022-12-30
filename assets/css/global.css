@@ -1,0 +1,88 @@
+    @font-face {
+    font-family: 'SFProText';
+    src: url('~assets/fonts/SF-Pro-Text-Regular.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'SFProDisplay';
+    src: url('~assets/fonts/SF-Pro-Display-Regular.otf') format('opentype');
+  }
+
+  @font-face {
+    font-family: 'SFProDisplayTitle';
+    src: url('~assets/fonts/SF-Pro-Display-Bold.otf') format('opentype');
+  }
+
+  
+  #navTitle {
+    font-weight: 600;
+    font-family: 'SFProDisplay';
+    font-stretch: 100%;
+    font-size: 1em;
+  }
+
+  #appleFontTitle {
+    font-weight: 1000;
+    font-family: 'SFProDisplayTitle';
+    font-stretch: 100%;
+    font-size: 5vmax ;
+  }
+
+  #appleFontNormalTitle1 {
+    font-weight: 1000;
+    font-family: 'SFProDisplay';
+    font-stretch: 100%;
+    font-size: 3vmax ;
+  }
+
+  #appleFontNormalTitle2 {
+    font-weight: 1000;
+    font-family: 'SFProDisplayTitle';
+    font-stretch: 100%;
+    font-size: 3vmax ;
+  }
+
+  #appleFontNormalTitle {
+    font-weight: 600;
+    font-family: 'SFProDisplayTitle';
+    font-stretch: 100%;
+    font-size: 4vmax;
+  }
+
+  #appleFontText {
+    font-size: 1em; 
+    font-weight: 600;
+    font-family: 'SFProText';
+    font-display: swap;
+    font-stretch: 100%;
+  }
+
+  #appleFontText1 {
+    font-size: 12px; 
+    font-weight: 400;
+    font-family: 'SFProText';
+    font-display: swap;
+    font-stretch: 100%;
+    color: grey;
+  }
+  
+  #appleFontText2 {
+    font-size: 12px; 
+    font-weight: 600;
+    font-family: 'SFProText';
+    font-display: swap;
+    font-stretch: 100%;
+  }
+
+
+
+  #appleFontTextNormal {
+    font-size: 14px; 
+    font-weight: 400;
+    font-family: 'SFProText';
+    font-display: swap;
+    font-stretch: 100%;
+  }
+
+
+

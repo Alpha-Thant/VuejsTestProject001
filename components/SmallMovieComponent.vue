@@ -1,7 +1,8 @@
 <template>
-    <v-card height="200px" width="350px" class="black rounded-xl px-5 py-5">
+    <v-card height="200px" width="350px" class="black rounded-xl px-5 py-5 justify-center">
         <v-hover v-slot="{ hover }">
             <v-card
+              color="black"
               :class="{ 'on-hover': hover }"
             >
               <v-img

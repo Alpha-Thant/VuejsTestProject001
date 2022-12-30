@@ -1,37 +1,37 @@
 <template>
     <v-container class="black--text">
-        <p>
+        <p id="appleFontText1">
         * MLS Season Pass requires a subscription.
         </p>
-        <p>
+        <p id="appleFontText1">
         1.$6.99/month after free trial. Only one offer per Apple ID and only one offer per family if you’re part of a Family Sharing group, regardless of the number of devices you or your family purchases. This offer is not available if you or your Family have previously accepted an Apple TV+ one year free offer. Offer good for 3 months after eligible device activation. Plan automatically renews until cancelled. Restrictions and other terms apply.
         </p>
-        <p>
+        <p id="appleFontText1">
         2.One subscription per Family Sharing group. Plan automatically renews until cancelled.
         </p>
-        <p>
+        <p id="appleFontText1">
         3.The Apple One free trial includes only services that you are not currently using through a free trial or a subscription. Plan automatically renews after trial until cancelled. Restrictions and other terms apply.
         </p>
-        <p>
+        <p id="appleFontText1">
         4.Limited-time offer; offer may end at any time. Free Apple TV+ access for students ends when you no longer qualify or do not renew your Apple Music Student subscription. Offer good for verified college students only and does not extend to a Family Sharing group.
         </p>
 
       <v-divider class="mb-5"></v-divider>
 
       <v-icon small class="mb-1">mdi-apple</v-icon>
-      <v-icon>mdi-chevron-right</v-icon>  only on Apple
-      <v-icon>mdi-chevron-right</v-icon> Apple TV+
+      <v-icon>mdi-chevron-right</v-icon><span id="appleFontText1">only on Apple</span>  
+      <v-icon>mdi-chevron-right</v-icon><span id="appleFontText1">Apple TV+</span> 
 
       
 
-      <v-row justify="center" align="center"> 
+      <v-row class="mt-3" justify="center" align="center"> 
         <v-col cols="12" lg="2" md="3">
             <v-list-item two-line>
                 <v-list-item-content>
-                    <v-list-item-title>Shop and Learn</v-list-item-title>
+                    <v-list-item-title id="appleFontText2">Shop and Learn</v-list-item-title>
                     <span  v-for="(item, i) in list1"
                     :key="i">
-                        <v-list-item-subtitle>{{item}}</v-list-item-subtitle>
+                        <v-list-item-subtitle class="mt-2" id="appleFontText1" >{{item}}</v-list-item-subtitle>
                     </span>
                 </v-list-item-content>
             </v-list-item>
@@ -40,10 +40,10 @@
         <v-col cols="12" lg="2" md="3">
             <v-list-item two-line>
                 <v-list-item-content>
-                    <v-list-item-title>Services</v-list-item-title>
+                    <v-list-item-title id="appleFontText2">Services</v-list-item-title>
                     <span  v-for="(item, i) in list2"
                     :key="i">
-                        <v-list-item-subtitle>{{item}}</v-list-item-subtitle>
+                        <v-list-item-subtitle class="mt-2" id="appleFontText1">{{item}}</v-list-item-subtitle>
                     </span>
                 </v-list-item-content>
             </v-list-item>
@@ -52,10 +52,10 @@
         <v-col cols="12" lg="2" md="3">
             <v-list-item two-line>
                 <v-list-item-content>
-                    <v-list-item-title>Apple store</v-list-item-title>
+                    <v-list-item-title id="appleFontText2">Apple store</v-list-item-title>
                     <span  v-for="(item, i) in list3"
                     :key="i">
-                        <v-list-item-subtitle>{{item}}</v-list-item-subtitle>
+                        <v-list-item-subtitle class="mt-2" id="appleFontText1">{{item}}</v-list-item-subtitle>
                     </span>
                 </v-list-item-content>
             </v-list-item>
@@ -64,10 +64,10 @@
         <v-col cols="12" lg="2" md="3">
             <v-list-item two-line>
                 <v-list-item-content>
-                    <v-list-item-title>For Business</v-list-item-title>
+                    <v-list-item-title id="appleFontText2">For Business</v-list-item-title>
                     <span  v-for="(item, i) in list4"
                     :key="i">
-                        <v-list-item-subtitle>{{item}}</v-list-item-subtitle>
+                        <v-list-item-subtitle class="mt-2" id="appleFontText1">{{item}}</v-list-item-subtitle>
                     </span>
                 </v-list-item-content>
             </v-list-item>
@@ -76,10 +76,10 @@
         <v-col cols="12" lg="2" md="3">
             <v-list-item two-line>
                 <v-list-item-content>
-                    <v-list-item-title>Apple Value</v-list-item-title>
+                    <v-list-item-title id="appleFontText2">Apple Value</v-list-item-title>
                     <span  v-for="(item, i) in list5"
                     :key="i">
-                        <v-list-item-subtitle>{{item}}</v-list-item-subtitle>
+                        <v-list-item-subtitle class="mt-2" id="appleFontText1">{{item}}</v-list-item-subtitle>
                     </span>
                 </v-list-item-content>
             </v-list-item>
@@ -105,6 +105,10 @@ export default {
             'Accessories',
             'Gift Cards',
             '.',
+            '.',
+            '.',
+            '.',
+            '.',
         ]
 
         const list2 = [
@@ -122,6 +126,7 @@ export default {
             'Manage Your Apple ID',
             'Apple Store Account',
             'iCloud.com',
+            '.',
         ]
 
         const list3 = [
@@ -135,6 +140,11 @@ export default {
             'Apple Trade In',
             'Order Status',
             'Shopping Help',
+            '.',
+            '.',
+            '.',
+            '.',
+            '.',
         ]
 
         const list4 = [
@@ -152,6 +162,7 @@ export default {
             'For Government',
             'Shop for Government',
             'Shop for Veterans and Military',
+            '.',
         ]
 
         const list5 = [

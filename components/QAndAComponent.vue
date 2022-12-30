@@ -1,8 +1,7 @@
 <template>
     <v-container>
     <v-row justify="center" align="center">
-        <h1 :class="{'heading': $vuetify.breakpoint. smAndDown, 
-      'display-3': $vuetify.breakpoint. mdAndUp}">Questions? Answers.</h1>
+        <h1 id="appleFontNormalTitle">Questions? Answers.</h1>
     </v-row>
     <v-list class="white black--text mt-15">
       <v-list-group
@@ -12,7 +11,7 @@
         <template v-slot:activator>
           <v-list-item-content>
             <v-list-item-title class="black--text">
-                <h2>{{ item.title }}</h2>
+                <h2 id="navTitle">{{ item.title }}</h2>
                 <v-divider class="mt-5"></v-divider>
             </v-list-item-title>
           </v-list-item-content>
@@ -20,7 +19,7 @@
         
 
         <v-list-item>
-          <v-list-item-content class="black--text">
+          <v-list-item-content id="navItemProp" class="black--text">
            {{ item.des }}
            <a style="font-weight:bold;" class="mt-5" v-if="item.loadMore">{{item.loadMoreValue}}<v-icon small color="blue">mdi-chevron-right</v-icon></a>
           </v-list-item-content>
@@ -89,5 +88,13 @@ export default {
 </script>
 
 <style>
+
+  #navItemProp {
+    font-size: 17px; 
+    font-weight: 400;
+    font-family: 'SFProText';
+    font-display: swap;
+    font-stretch: 100%;
+  }
 
 </style>

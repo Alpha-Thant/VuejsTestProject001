@@ -5,11 +5,11 @@
             class="white--text"
             height="500px"
         >
-            <v-card-subtitle>{{ title }}</v-card-subtitle>
-            <v-card-subtitle style="margin-top: 350px;">
-                {{ desTitle }} .
-                {{ description }}
-                <button-component style="margin-left:70%;" buttonText="Stream now"></button-component>
+            <v-card-subtitle id="title">{{ title }}</v-card-subtitle>
+            <v-card-subtitle class="d-flex justify-space-between" style="margin-top: 320px;">
+                <span id="title">{{ desTitle }}</span> .
+                <span>{{ description }}</span>
+                <v-btn class="white black--text" id="btn">Stream now<v-icon class="ml-1" small>mdi-play-circle</v-icon></v-btn>
             </v-card-subtitle>
 
         </v-img>
@@ -24,3 +24,18 @@ export default {
 
 }
 </script>
+
+<style scoped>
+  #title {
+    font-weight: 500;
+    font-family: 'SFProDisplayTitle';
+    font-stretch: 100%;
+    font-size: 1em;
+  }
+  #btn {
+    border-radius: 20px;
+    text-transform: unset !important;
+    margin-left: auto;
+  }
+
+</style>
